@@ -12,6 +12,8 @@
 		1039FCCD1D8707EC0033DFB9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1039FCCB1D8707EC0033DFB9 /* Main.storyboard */; };
 		1039FCCF1D8707EC0033DFB9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1039FCCE1D8707EC0033DFB9 /* Assets.xcassets */; };
 		1039FCD21D8707EC0033DFB9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1039FCD01D8707EC0033DFB9 /* LaunchScreen.storyboard */; };
+		1039FCDA1D8708290033DFB9 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 1039FCD91D8708290033DFB9 /* GoogleService-Info.plist */; };
+		91B4A8EEC51ACC86B3643691 /* Pods_Login_and_SignUp_iOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CA65BCFBD268770EBCE206D4 /* Pods_Login_and_SignUp_iOS.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +24,10 @@
 		1039FCCE1D8707EC0033DFB9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1039FCD11D8707EC0033DFB9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1039FCD31D8707EC0033DFB9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1039FCD91D8708290033DFB9 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		71F7C5F389D95D5BBFA844DD /* Pods-Login and SignUp iOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Login and SignUp iOS.release.xcconfig"; path = "Pods/Target Support Files/Pods-Login and SignUp iOS/Pods-Login and SignUp iOS.release.xcconfig"; sourceTree = "<group>"; };
+		B168F223E1B235D0BDB9A49B /* Pods-Login and SignUp iOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Login and SignUp iOS.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Login and SignUp iOS/Pods-Login and SignUp iOS.debug.xcconfig"; sourceTree = "<group>"; };
+		CA65BCFBD268770EBCE206D4 /* Pods_Login_and_SignUp_iOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Login_and_SignUp_iOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,6 +35,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				91B4A8EEC51ACC86B3643691 /* Pods_Login_and_SignUp_iOS.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -40,6 +47,8 @@
 			children = (
 				1039FCC61D8707EC0033DFB9 /* Login and SignUp iOS */,
 				1039FCC51D8707EC0033DFB9 /* Products */,
+				D39C321932FE7FCE3611A26D /* Pods */,
+				7DD32620CBF9F8923893AC66 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -60,8 +69,26 @@
 				1039FCCE1D8707EC0033DFB9 /* Assets.xcassets */,
 				1039FCD01D8707EC0033DFB9 /* LaunchScreen.storyboard */,
 				1039FCD31D8707EC0033DFB9 /* Info.plist */,
+				1039FCD91D8708290033DFB9 /* GoogleService-Info.plist */,
 			);
 			path = "Login and SignUp iOS";
+			sourceTree = "<group>";
+		};
+		7DD32620CBF9F8923893AC66 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				CA65BCFBD268770EBCE206D4 /* Pods_Login_and_SignUp_iOS.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D39C321932FE7FCE3611A26D /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				B168F223E1B235D0BDB9A49B /* Pods-Login and SignUp iOS.debug.xcconfig */,
+				71F7C5F389D95D5BBFA844DD /* Pods-Login and SignUp iOS.release.xcconfig */,
+			);
+			name = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -71,9 +98,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 1039FCD61D8707EC0033DFB9 /* Build configuration list for PBXNativeTarget "Login and SignUp iOS" */;
 			buildPhases = (
+				FFC947BC39D068A5663B4A99 /* [CP] Check Pods Manifest.lock */,
 				1039FCC01D8707EC0033DFB9 /* Sources */,
 				1039FCC11D8707EC0033DFB9 /* Frameworks */,
 				1039FCC21D8707EC0033DFB9 /* Resources */,
+				EEB825C508D2CE6EC0145031 /* [CP] Embed Pods Frameworks */,
+				D770B1BEB83B25D988E72EAF /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -124,12 +154,61 @@
 			buildActionMask = 2147483647;
 			files = (
 				1039FCD21D8707EC0033DFB9 /* LaunchScreen.storyboard in Resources */,
+				1039FCDA1D8708290033DFB9 /* GoogleService-Info.plist in Resources */,
 				1039FCCF1D8707EC0033DFB9 /* Assets.xcassets in Resources */,
 				1039FCCD1D8707EC0033DFB9 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		D770B1BEB83B25D988E72EAF /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Login and SignUp iOS/Pods-Login and SignUp iOS-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		EEB825C508D2CE6EC0145031 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Login and SignUp iOS/Pods-Login and SignUp iOS-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FFC947BC39D068A5663B4A99 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		1039FCC01D8707EC0033DFB9 /* Sources */ = {
@@ -248,6 +327,7 @@
 		};
 		1039FCD71D8707EC0033DFB9 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B168F223E1B235D0BDB9A49B /* Pods-Login and SignUp iOS.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = "Login and SignUp iOS/Info.plist";
@@ -259,6 +339,7 @@
 		};
 		1039FCD81D8707EC0033DFB9 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 71F7C5F389D95D5BBFA844DD /* Pods-Login and SignUp iOS.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = "Login and SignUp iOS/Info.plist";
@@ -287,6 +368,7 @@
 				1039FCD81D8707EC0033DFB9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
